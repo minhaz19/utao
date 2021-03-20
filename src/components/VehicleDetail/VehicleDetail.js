@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import './VehicleDetail.css';
 import people from "../../picture/peopleicon.png";
 import image from '../../picture/Map.png'

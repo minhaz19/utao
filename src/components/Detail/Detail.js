@@ -13,7 +13,7 @@ const Detail = () => {
         .then(data => setVehicleDetail(data))
     },[])
 
-    const vehicleInfo = vehicleDetail.find(vh => vh.id == info)
+    // const vehicleInfo = vehicleDetail.find(vh => vh.id == info)
     // console.log(vehicleInfo.id)
     let history = useHistory();
     
