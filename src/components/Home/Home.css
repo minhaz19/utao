@@ -1,0 +1,15 @@
+.container{
+    background-image: url("https://www.digitalartsonline.co.uk/cmsdata/slideshow/3638291/urbanillustrationsocial.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /* height:100vh; */
+
+}
+.info-style{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+}
