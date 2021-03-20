@@ -27,7 +27,7 @@
     background-color: tomato;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .link-container li.name-link, 
     .link-container .link {float: none;}
   }
