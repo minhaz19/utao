@@ -17,7 +17,6 @@ const Header = () => {
             <li><Link className="link name-link" to=''>Speed Riders</Link></li>
             <li><Link className="link style search-btn" to='/login'>Login</Link></li>
             <li><Link className="link" to=''>Contact</Link></li>
-            <li><Link className="link" to=''>Blog</Link></li>
             <li><Link className="link" to=''>Destination</Link></li>
             <li><Link className="link" to=''>Home</Link></li>
             
