@@ -26,9 +26,6 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route exact path="/">
-                <Home></Home>
-            </Route>
             <PrivateRoute path="/destination/:info">
                 <Detail></Detail>
             </PrivateRoute>
@@ -37,6 +34,9 @@ function App() {
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route exact path="/">
+                <Home></Home>
             </Route>
             <Route path="*">
                 <Nomatch></Nomatch>
