@@ -1,13 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './VehicleDetail.css';
 import people from "../../picture/peopleicon.png";
-import image from '../../picture/Map.png'
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
+
+const containerStyle = {
+    width: '500px',
+    height: '500px'
+  };
+  
+  const center = {
+    lat: -3.745,
+    lng: -38.523
+  };
 
 const VehicleDetail = () => {
     const {id} = useParams();
     const [vehicleDetail , setVehicleDetail] = useState([]);
-
+    
     useEffect(() =>{
         fetch("https://api.mocki.io/v1/560b1f2b")
         .then(res => res.json())
@@ -48,10 +58,18 @@ const VehicleDetail = () => {
                     <h5>{money}</h5>
                 </div>
             </div>
-            <img className="map-container" src={image} alt=""/>
-            
+            <LoadScript
+                googleMapsApiKey="AIzaSyBhO4gpgSmI0VXnEMfyYLK9A2lqc8N7CIA"
+                >
+                <GoogleMap
+                    mapContainerStyle={containerStyle}
+                    center={center}
+                    zoom={10}
+                >
+                </GoogleMap>
+            </LoadScript> 
         </div>
     );
 };
 
-export default VehicleDetail;<h1>This Vehicle Detail</h1>
+export default VehicleDetail;

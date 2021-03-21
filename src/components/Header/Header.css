@@ -23,8 +23,12 @@
     font-size: 20px;
     font-weight: bold;
 }
-.style{
+
+.login-btn{
     background-color: tomato;
+    padding: 5px 10px;
+    color: white; 
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 800px) {
